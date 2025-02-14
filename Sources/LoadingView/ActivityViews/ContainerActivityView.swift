@@ -20,7 +20,7 @@ public struct ContainerActivityView<Content>: View where Content: View {
     
     // MARK: - Init
     
-    @inlinable public init(@ViewBuilder content: () -> Content) {
+    public init(@ViewBuilder content: () -> Content) {
         self.content = content()
     }
 
